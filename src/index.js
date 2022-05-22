@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Header from './components/main/Header';
-import Body from './components/main/Body';
-import Footer from './components/main/Footer';
+import Contact from './components/main/Contact';
+import Experience from './components/main/Experience';
+import Introduction from './components/main/Introduction';
+import Projects from './components/main/Projects';
+import './input.css';
 
 ReactDOM.render(
-    <div>
-        <Header />
-        <Body />
-        <Footer />
+    <div className='max-w-screen-lg m-auto bg-custom-light text-custom-dark pb-4 px-8'>
+        <Introduction />
+        <Projects />
+        <Experience />
+        <Contact />
     </div>,
     document.getElementById('root')
 );

@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+.wave {
+    animation: waving 2s infinite ease-in-out;
+}
+
+@keyframes waving {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+@layer components {
+    h1 {
+        @apply text-6xl font-semibold text-center
+        flex flex-col
+        w-full
+
+        lg:text-left lg:w-auto;
+    }
+
+    h2 {
+        @apply pb-4
+        text-7xl font-semibold
+        flex justify-center;
+    }
+
+    h3 {
+        @apply text-6xl font-bold
+        
+        lg:text-3xl;
+    }
+
+    h4 {
+        @apply text-5xl
+        
+        lg:text-2xl;
+    }
+
+    h5 {
+        @apply text-4xl
+        
+        lg:text-lg;
+    }
+
+    p {
+        @apply text-5xl text-left
+        
+        lg:text-2xl;
+    }
+
+    ul {
+        @apply list-disc list-inside;
+    }
+
+    li {
+        @apply text-5xl text-left
+        
+        lg:text-2xl;
+    }
+
+    a {
+        @apply my-8 p-4 w-2/3
+        flex justify-center
+        text-6xl text-custom-light
+        bg-custom-color
+        border-custom-thin-line border-custom-color
+        rounded-full
+
+        lg:border-custom-thin-line-lg lg:text-3xl
+
+        hover:bg-custom-light hover:text-custom-dark;
+    }
+
+    .rounded-picture {
+        @apply rounded-full
+        border-custom-thin-line border-custom-color
+        shadow-2xl
+
+        lg:border-custom-thin-line-lg;
+    }
+}
