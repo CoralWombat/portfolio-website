@@ -8,11 +8,13 @@ import Footer from './components/main/Footer';
 import './input.css';
 
 ReactDOM.render(
-    <div className='max-w-screen-lg m-auto bg-custom-light text-custom-dark pb-4 px-8'>
-        <Introduction />
-        <Projects />
-        <Experience />
-        <Contact />
+    <div>
+        <div className='max-w-screen-lg m-auto bg-custom-light text-custom-dark px-8'>
+            <Introduction />
+            <Projects />
+            <Experience />
+            <Contact />
+        </div>
         <Footer/>
     </div>,
     document.getElementById('root')
