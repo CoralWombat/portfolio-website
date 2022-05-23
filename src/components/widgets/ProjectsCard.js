@@ -17,7 +17,7 @@ class ProjectsCard extends React.Component {
                         {this.props.text}
                     </p>
                     <br />
-                    <p>Used technologies:</p>
+                    <p className='text-custom-color font-normal'>Used technologies:</p>
                     {this.getTechList(this.props.tehcnologies)}
                 </div>
 

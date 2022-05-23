@@ -60,32 +60,37 @@ html {
     }
 
     p {
-        @apply text-5xl text-left
+        @apply text-5xl text-left font-light
         
         lg:text-2xl;
     }
 
     ul {
-        @apply list-disc list-inside;
+        @apply list-inside;
     }
 
     li {
-        @apply text-5xl text-left
+        @apply text-5xl text-left font-light
         
         lg:text-2xl;
     }
 
     a {
-        @apply my-8 p-4 w-2/3
+        @apply p-4 w-2/3
         flex justify-center
         text-6xl text-custom-light
         bg-custom-color
-        border-custom-thin-line border-custom-color
+        border-custom-thin-line border-custom-light
         rounded-full
 
         lg:border-custom-thin-line-lg lg:text-3xl
 
-        hover:bg-custom-light hover:text-custom-dark;
+        hover:bg-custom-light hover:text-custom-color hover:border-custom-color;
+    }
+
+    footer {
+        @apply flex justify-center
+        text-custom-light text-3xl
     }
 
     .rounded-picture {
