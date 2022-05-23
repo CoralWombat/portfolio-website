@@ -5,7 +5,7 @@ class Introduction extends React.Component {
 
     render() {
         return (
-            <div className='min-h-screen flex flex-col items-center gap-4 justify-center lg:flex-row'>
+            <div className='min-h-screen flex flex-col items-center gap-4 justify-center lg:flex-row bg-colored-smoke bg-custom bg-no-repeat'>
                 {this.introductionPicture()}
                 <div className='bg-custom-dark w-7/12 h-custom-thin-line rounded-custom-border-radius custom-shadow lg:h-44 lg:w-custom-thin-line-lg dark:bg-custom-light' />
                 {this.introductionText()}

@@ -2,6 +2,12 @@ module.exports = {
     content: ["./src/**/*.{html,js}"],
     theme: {
         extend: {
+            backgroundImage: {
+                'colored-smoke': "url('../public/images/bg.png')"
+            },
+            backgroundPosition: {
+                'custom': '-20cm 50%'
+            },
             colors: {
                 'custom-dark': '#001933',
                 'custom-light': 'white',

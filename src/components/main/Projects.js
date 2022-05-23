@@ -8,7 +8,7 @@ class Projects extends React.Component {
         return (
             <div className='mb-32'>
                 <h2>Projects</h2>
-                <div className='my-8 grid grid-cols-1 gap-4 lg:grid-cols-2'>
+                <div className='mx-8 grid grid-cols-1 gap-4 lg:grid-cols-2 max-w-screen-lg lg:m-auto'>
                     <ProjectsCard
                         lifeSpan='May 2018 - Oct 2021'
                         role='Backend Developer'
