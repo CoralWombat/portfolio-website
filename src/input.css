@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
-
 .wave {
     animation: waving 2s infinite ease-in-out;
 }
@@ -27,42 +21,78 @@ html {
 }
 
 @layer components {
+    html {
+        -moz-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+
+        @apply bg-custom-light dark:bg-custom-dark
+    }
+
     h1 {
-        @apply text-6xl font-semibold text-center
+        @apply text-6xl font-semibold text-center text-custom-dark
         flex flex-col
         w-full
 
-        lg:text-left lg:w-auto;
+        lg:text-left lg:w-auto
+
+        dark:text-custom-light;
     }
 
     h2 {
         @apply pb-4
-        text-7xl font-semibold
-        flex justify-center;
+        text-7xl font-semibold text-custom-dark
+        flex justify-center
+        
+        dark:text-custom-light;
     }
 
     h3 {
-        @apply text-6xl font-bold
+        @apply text-6xl font-bold text-custom-light
         
-        lg:text-3xl;
+        lg:text-3xl
+
+        dark:text-custom-light;
+    }
+
+    .h3-alt {
+        @apply text-6xl font-bold text-custom-dark
+        
+        lg:text-3xl
+
+        dark:text-custom-light;
     }
 
     h4 {
-        @apply text-5xl
+        @apply text-5xl text-custom-light
         
-        lg:text-2xl;
+        lg:text-2xl
+
+        dark:text-custom-light;
     }
 
     h5 {
-        @apply text-4xl
+        @apply text-4xl text-custom-light
         
-        lg:text-lg;
+        lg:text-lg
+
+        dark:text-custom-light;
+    }
+
+    .h5-alt {
+        @apply text-4xl text-custom-dark
+        
+        lg:text-lg
+
+        dark:text-custom-light;
     }
 
     p {
-        @apply text-5xl text-left font-light
+        @apply text-5xl text-left font-light text-custom-dark
         
-        lg:text-2xl;
+        lg:text-2xl
+
+        dark:text-custom-light;
     }
 
     ul {
@@ -70,9 +100,11 @@ html {
     }
 
     li {
-        @apply text-5xl text-left font-light
+        @apply text-5xl text-left font-light text-custom-dark
         
-        lg:text-2xl;
+        lg:text-2xl
+
+        dark:text-custom-light;
     }
 
     a {
@@ -85,19 +117,29 @@ html {
 
         lg:border-custom-thin-line-lg lg:text-3xl
 
-        hover:bg-custom-light hover:text-custom-color hover:border-custom-color;
+        hover:bg-custom-light hover:text-custom-color hover:border-custom-color hover:dark:bg-custom-dark
+        
+        dark:border-custom-dark;
     }
 
     footer {
         @apply flex justify-center
-        text-custom-light text-3xl
+        text-custom-light text-3xl;
     }
 
     .rounded-picture {
         @apply rounded-full
-        border-custom-thin-line border-custom-color
-        shadow-2xl
+        border-custom-thin-line border-custom-dark
+        custom-shadow
 
-        lg:border-custom-thin-line-lg;
+        lg:border-custom-thin-line-lg
+        
+        dark:border-custom-light;
+    }
+
+    .custom-shadow {
+        @apply shadow-md shadow-custom-dark/25
+        
+        dark:shadow-custom-light/25;
     }
 }

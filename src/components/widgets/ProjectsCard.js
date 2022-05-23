@@ -3,9 +3,9 @@ import React from 'react';
 class ProjectsCard extends React.Component {
     render() {
         return (
-            <div className='bg-custom-light text-custom-dark rounded-3xl shadow-2xl'>
+            <div className='bg-custom-light rounded-3xl custom-shadow dark:bg-custom-dark'>
 
-                <div className='bg-custom-color text-custom-light rounded-t-3xl w-full py-8 text-center lg:rounded-t-xl'>
+                <div className='bg-custom-color rounded-t-3xl w-full py-8 text-center lg:rounded-t-xl'>
                     <h4>{this.props.lifeSpan}</h4>
                     <h3>{this.props.title}</h3>
                     <h5>as {this.props.role}</h5>
@@ -17,7 +17,7 @@ class ProjectsCard extends React.Component {
                         {this.props.text}
                     </p>
                     <br />
-                    <p className='text-custom-color font-normal'>Used technologies:</p>
+                    <p className='font-medium'>Used technologies:</p>
                     {this.getTechList(this.props.tehcnologies)}
                 </div>
 

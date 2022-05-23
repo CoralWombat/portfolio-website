@@ -9,13 +9,13 @@ import './input.css';
 
 ReactDOM.render(
     <div>
-        <div className='max-w-screen-lg m-auto bg-custom-light text-custom-dark px-8'>
+        <div className='max-w-screen-lg m-auto bg-custom-light text-custom-dark px-8 dark:bg-custom-dark'>
             <Introduction />
             <Projects />
             <Experience />
             <Contact />
         </div>
-        <Footer/>
+        <Footer />
     </div>,
     document.getElementById('root')
 );

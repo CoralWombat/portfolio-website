@@ -2,11 +2,12 @@ import React from 'react';
 import { MdWavingHand } from 'react-icons/md'
 
 class Introduction extends React.Component {
+
     render() {
         return (
             <div className='min-h-screen flex flex-col items-center gap-4 justify-center lg:flex-row'>
                 {this.introductionPicture()}
-                <div className='bg-custom-color w-7/12 h-custom-thin-line rounded-custom-border-radius shadow-2xl lg:h-44 lg:w-custom-thin-line-lg' />
+                <div className='bg-custom-dark w-7/12 h-custom-thin-line rounded-custom-border-radius custom-shadow lg:h-44 lg:w-custom-thin-line-lg dark:bg-custom-light' />
                 {this.introductionText()}
             </div>
         );
