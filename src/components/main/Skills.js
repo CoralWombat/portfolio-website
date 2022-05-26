@@ -21,7 +21,7 @@ class Skills extends React.Component {
                             <p>Apache Maven &nbsp;<Tag level={2} /></p>,
                             <p>Oracle Weblogic 12c &nbsp;<Tag level={2} /></p>,
                             <p>WildFly &nbsp;<Tag level={2} /></p>,
-                            <p>Tomcan 9 &nbsp;<Tag level={2} /></p>,
+                            <p>Tomcat 9 &nbsp;<Tag level={2} /></p>,
                             <p>Docker &nbsp;<Tag level={2} /></p>,
                             <p>Swagger API &nbsp;<Tag level={2} /></p>,
                         ]} />
