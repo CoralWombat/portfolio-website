@@ -16,6 +16,7 @@ class Skills extends React.Component {
                             <p>React &nbsp;<Tag level={3} /></p>,
                             <p>Java Persistence API &nbsp;<Tag level={3} /></p>,
                             <p>Git &nbsp;<Tag level={3} /></p>,
+                            <p>Tailwind CSS &nbsp;<Tag level={3} /></p>,
                             <p>SQL &nbsp;<Tag level={2} /></p>,
                             <p>Thymeleaf &nbsp;<Tag level={2} /></p>,
                             <p>Apache Maven &nbsp;<Tag level={2} /></p>,
