@@ -94,7 +94,7 @@
 
     a {
         @apply p-4 w-2/3
-        flex justify-center
+        flex justify-center items-center
         text-6xl text-custom-light
         bg-custom-color
         border-custom-thin-line border-custom-light
@@ -108,7 +108,7 @@
     }
 
     footer {
-        @apply flex justify-center
+        @apply flex justify-center items-center
         text-custom-light text-3xl;
     }
 

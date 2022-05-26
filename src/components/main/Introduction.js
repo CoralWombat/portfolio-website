@@ -16,7 +16,7 @@ class Introduction extends React.Component {
     introductionText() {
         return (
             <h1>
-                <div className='flex justify-center lg:justify-start'>Hi, &nbsp;<MdWavingHand className='wave' /></div>
+                <div className='flex justify-center items-center lg:justify-start'>Hi, &nbsp;<MdWavingHand className='wave' /></div>
                 <div>I'm Kristóf,</div>
                 <div>Full stack developer.</div>
             </h1>
