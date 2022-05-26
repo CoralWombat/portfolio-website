@@ -1,18 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './input.css';
 import Contact from './components/main/Contact';
 import Experience from './components/main/Experience';
 import Introduction from './components/main/Introduction';
 import Projects from './components/main/Projects';
 import Footer from './components/main/Footer';
-import './input.css';
+import Languages from './components/main/Languages';
+import Skills from './components/main/Skills';
 
 ReactDOM.render(
     <div>
-        <div className=''>
+        <div>
             <Introduction />
             <Projects />
+            <Skills />
             <Experience />
+            <Languages />
             <Contact />
         </div>
         <Footer />

@@ -25,7 +25,7 @@ class Introduction extends React.Component {
 
     introductionPicture() {
         return (
-            <img className='rounded-picture w-96 lg:w-56' src={process.env.PUBLIC_URL + '/images/profpic.jpg'} />
+            <img className='rounded-full custom-border w-96 lg:w-56' src={process.env.PUBLIC_URL + '/images/profpic.jpg'} />
         );
     }
 }

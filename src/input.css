@@ -48,15 +48,7 @@
     }
 
     h3 {
-        @apply text-6xl font-bold text-custom-light
-        
-        lg:text-3xl
-
-        dark:text-custom-light;
-    }
-
-    .h3-alt {
-        @apply text-6xl font-bold text-custom-dark
+        @apply text-6xl font-bold text-custom-dark text-center
         
         lg:text-3xl
 
@@ -64,7 +56,7 @@
     }
 
     h4 {
-        @apply text-5xl text-custom-light
+        @apply text-5xl text-custom-dark text-center
         
         lg:text-2xl
 
@@ -72,15 +64,7 @@
     }
 
     h5 {
-        @apply text-4xl text-custom-light
-        
-        lg:text-lg
-
-        dark:text-custom-light;
-    }
-
-    .h5-alt {
-        @apply text-4xl text-custom-dark
+        @apply text-4xl text-custom-dark text-center
         
         lg:text-lg
 
@@ -89,6 +73,7 @@
 
     p {
         @apply text-5xl text-left font-light text-custom-dark
+        flex justify-start items-center
         
         lg:text-2xl
 
@@ -127,13 +112,12 @@
         text-custom-light text-3xl;
     }
 
-    .rounded-picture {
-        @apply rounded-full
-        border-custom-thin-line border-custom-dark
+    .custom-border {
+        @apply border-custom-thin-line border-custom-dark
         custom-shadow
 
         lg:border-custom-thin-line-lg
-        
+
         dark:border-custom-light;
     }
 
@@ -141,5 +125,13 @@
         @apply shadow-md shadow-custom-dark/25
         
         dark:shadow-custom-light/25;
+    }
+
+    .horizontal-line {
+        @apply bg-custom-color rounded-custom-border-radius custom-shadow h-custom-thin-line-lg;
+    }
+
+    .custom-rounded {
+        @apply rounded-3xl;
     }
 }
