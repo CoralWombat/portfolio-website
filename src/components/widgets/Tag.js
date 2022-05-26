@@ -2,7 +2,7 @@ import React from "react";
 
 class Tag extends React.Component {
     render() {
-        return <p className={"rounded-full py-2 px-4 font-normal " + this.getBgColor(this.props.level)}>
+        return <p className={"rounded-full py-2 px-4 font-normal text-custom-light " + this.getBgColor(this.props.level)}>
             {this.getText(this.props.level)}
         </p>
     }
