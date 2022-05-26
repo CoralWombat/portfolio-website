@@ -131,10 +131,6 @@
         @apply bg-custom-color rounded-custom-border-radius custom-shadow h-custom-thin-line-lg;
     }
 
-    .vertical-line {
-        @apply bg-custom-color rounded-custom-border-radius custom-shadow w-custom-thin-line-lg;
-    }
-
     .custom-rounded {
         @apply rounded-3xl;
     }

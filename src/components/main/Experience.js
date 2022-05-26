@@ -1,5 +1,5 @@
 import React from 'react';
-import ExperienceCard from '../widgets/ExperienceCard';
+import TimelineCard from '../widgets/TimelineCard';
 
 class Experience extends React.Component {
     render() {
@@ -7,8 +7,8 @@ class Experience extends React.Component {
             <div className='my-32'>
                 <h2>Experience</h2>
                 <div className='flex flex-col items-center justify-center'>
-                    <ExperienceCard companyName='Dorsum | Investment Software' roleName='Java Software Engineer' from='May 2018' />
-                    <ExperienceCard companyName='EPAM Systems' roleName='Java Software Engineer' from='Oct 2021' />
+                    <TimelineCard companyName='Dorsum | Investment Software' roleName='Java Software Engineer' from='May 2018' />
+                    <TimelineCard companyName='EPAM Systems' roleName='Java Software Engineer' from='Oct 2021' />
                 </div>
             </div>
         );
