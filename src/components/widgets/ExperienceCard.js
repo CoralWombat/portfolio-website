@@ -4,15 +4,20 @@ class ExperienceCard extends React.Component {
     render() {
         return (
             <div>
-                <div className='m-auto bg-custom-color w-custom-thin-line h-8 lg:w-custom-thin-line-lg' />
-                <p className='custom-shadow rounded-full border-custom-thin-line border-custom-color px-4 py-1 text-center text-3xl lg:border-custom-thin-line-lg lg:text-xl'>{this.props.from}</p>
-                <div className='m-auto bg-custom-color w-custom-thin-line h-8 lg:w-custom-thin-line-lg' />
-                <div className='border-custom-thin-line border-custom-color text-custom-dark text-center rounded-2xl p-6 custom-shadow w-full max-w-screen-md lg:border-custom-thin-line-lg'>
+                {this.verticalLine()}
+                <p className='px-4 py-2 justify-center custom-shadow custom-border rounded-full'>{this.props.from}</p>
+                {this.verticalLine()}
+                <div className='rounded-2xl p-6 custom-shadow custom-border flex flex-col justify-center items-center'>
                     <h3 className='h3'>{this.props.companyName}</h3>
+                    <div className='w-3/4 m-2 horizontal-line' />
                     <h5 className='h5'>as {this.props.roleName}</h5>
                 </div>
             </div>
         );
+    }
+
+    verticalLine() {
+        return <div className='m-auto h-8 bg-custom-dark w-custom-thin-line lg:w-custom-thin-line-lg dark:bg-custom-light' />;
     }
 }
 
