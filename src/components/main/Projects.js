@@ -15,7 +15,7 @@ class Projects extends React.Component {
                         subSubTitle='as Backend Developer'
                         icon={<RiBankLine />}
                         content={this.produceContent(
-                            'Takarékbank is a major bank based in Hungary with over 1.9 million customers. The goal of the project that I participated in was to create an investment software that can modernizate the securities trading system.',
+                            'Takarékbank is a major bank based in Hungary with over 1.9 million customers. The goal of the project that I participated in was to create an investment software that could modernize the securities trading system.',
                             ['Java', 'Spring Boot', 'Oracle Weblogic 12c, later WildFly', 'Oracle Database', 'Docker']
                         )}
                     />
@@ -26,7 +26,7 @@ class Projects extends React.Component {
                         subSubTitle='as Frontend Developer'
                         icon={<GiSwissArmyKnife />}
                         content={this.produceContent(
-                            'My task was to maintain around 70 different front end applications. Each projects have different business purpose, only the framework was common. Maintaining means implementing new requirements, fixing issues, and doing code quality reviews.',
+                            'My task was to maintain around 70 different front end applications. Each project had different business purposes, only the framework was common. Maintaining means implementing new requirements, fixing issues, and doing code quality reviews.',
                             ['Java', 'Spring Boot', 'ReactJS']
                         )}
                     />

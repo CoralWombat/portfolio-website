@@ -6,7 +6,7 @@ class Contact extends React.Component {
         return (
             <div className='flex justify-center -mb-7'>
                 <a href='https://www.linkedin.com/in/kristofgonczo/'>
-                    Contact me at &nbsp;<BsLinkedin />!
+                    Contact me on &nbsp;<BsLinkedin />!
                 </a>
             </div>
         );
